@@ -1,7 +1,11 @@
-/**
- * Eric Meyer's Reset CSS v2.0 (http://meyerweb.com/eric/tools/css/reset/)
- * http://cssreset.com
- */
+/* -----------------------------------*/
+/* ---           RESETS            ---*/
+/* -----------------------------------*/
+/*
+http://meyerweb.com/eric/tools/css/reset/
+v2.0 | 20110126
+License: none (public domain)
+*/
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -45,16 +49,24 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
-/**
- * Clearfix
- */
+/* apply a natural box layout model to all elements, but allowing components to
+/* change */
+html {
+  box-sizing: border-box; }
+
+*, *:before, *:after {
+  box-sizing: inherit; }
+
 /**
  * Basic styling
  */
 body {
   font-family: 'roboto';
   font-size: 1em;
-  font-weight: 300; }
+  font-weight: 300;
+  text-rendering: optimizelegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
 
 .site-nav {
   display: flex;
@@ -70,40 +82,67 @@ body {
   display: flex;
   flex-grow: 1;
   flex-direction: column;
-  justify-content: flex-start; }
-
-.logo {
+  line-height: 1.6em;
+  justify-content: flex-start;
   text-decoration: none;
   color: #666;
-  font-family: 'roboto'; }
+  transition: color 400ms ease; }
+
+.peter-block:hover {
+  color: #2980b9; }
 
 .peter-name {
-  dislay: flex;
-  font-weight: 700; }
+  font-weight: 700;
+  font-size: 1.2em; }
 
 .peter-title {
-  display: flex;
-  font-size: 11px; }
+  font-size: .9em; }
 
 .separator {
   display: flex;
   flex-grow: 2; }
 
 .nav-list {
+  margin-top: .9em;
   display: flex;
   flex-grow: 1;
   flex-direction: row;
   justify-content: flex-end; }
 
 .nav-list a {
-  margin: 20px;
-  padding: 0 16px;
-  font-family: 'roboto';
+  padding: 0 2.4em;
+  position: relative;
+  font-weight: 500;
   color: #666;
-  text-decoration: none; }
+  text-decoration: none;
+  transition: color 400ms ease; }
 
-hr {
-  margin: 0 25px; }
+.nav-list a:hover {
+  color: #2980b9; }
+
+.nav-list a:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: .14em;
+  bottom: -.4em;
+  left: 0;
+  background-color: #3498db;
+  visibility: hidden;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s; }
+
+.nav-list a:hover:before {
+  visibility: visible;
+  -webkit-transform: scaleX(0.45);
+  transform: scaleX(0.45); }
+
+.header-border {
+  border: 2px solid #ecf0f1;
+  padding: 0;
+  margin: 0; }
 
 .home {
   padding: 25px; }
