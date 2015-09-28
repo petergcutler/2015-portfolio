@@ -1,0 +1,12 @@
+---
+layout: default
+---
+
+<ul class="writing">
+   {% for writing in site.writing %}
+   	<li>
+     	<h1><a href="{{ writing.url }}">{{ writing.title }}</a></h1>
+     	<p class="post-excerpt"> {{ writing.excerpt }} </p>
+    </li>
+    {% endfor %}
+</ul>

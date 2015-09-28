@@ -1,0 +1,98 @@
+/**
+ * Basic styling
+ */
+
+body {
+    font-family: 'roboto';
+    font-weight: 300;
+}
+
+.site-nav {
+    display: flex;
+    padding: 25px;
+    font-weight: 300;
+    font-family: 'roboto';
+    font-style: normal;
+    font-stretch: normal;
+    font-size: 14px;
+    line-height: 20px;
+    color: #444444;
+    background-color: #fff;
+}
+
+.peter-block {
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.logo {
+    text-decoration: none;
+    color: #666;
+    font-family: 'roboto';
+}
+
+.peter-name {
+    dislay: flex;
+    font-weight: 700;
+}
+
+.peter-title {
+    display: flex;
+    font-size: 11px
+}
+
+.separator {
+    display: flex;
+    flex-grow: 2;
+}
+
+.nav-list {
+    display: flex;
+    flex-grow: 1;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.nav-list a {
+    margin: 20px;
+    padding: 0 16px;
+    font-family: 'roboto';
+    color: #666;
+    text-decoration: none;
+}
+
+hr {
+    margin: 0 25px
+}
+
+.home {
+    padding: 25px
+}
+
+.projects {
+    display: flex;
+    font-decoration: none;
+    font-family: 'roboto';
+    font-size: 16px;
+    color: #666;
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.home-options {
+    display: flex;
+    > * {
+        flex: 0 0 50%;
+    }
+}
+
+.projects img {
+    display: block;
+    border: 1px solid red;
+}
