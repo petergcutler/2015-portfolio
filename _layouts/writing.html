@@ -6,7 +6,7 @@ layout: default
    {% for writing in site.writing %}
    	<li>
      	<h1><a href="{{ writing.url }}">{{ writing.title }}</a></h1>
-     	<p class="post-excerpt"> {{ writing.excerpt }} </p>
+     	<p class="post-subtitle"> {{ writing.subtitle }} </p>
     </li>
     {% endfor %}
 </ul>

@@ -4,39 +4,26 @@ layout: default
 
 <div class="home">
 
-  <h1 class="page-heading">Posts</h1>
-
- <!--  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul> -->
+  <h1 class="page-heading">Hello! How are you doing? Click "Say hello!" above to respond.</h1>
 
   <div class="home-options">
 
-    <section>
-    {% for project in site.projects limit:2 %}
-     <h1><a href="{{ project.url }}">{{ project.title }}</a></h1>
-     {{ project.excerpt }}
+    <section class="home-projects">
+      <h2 class="home-projects-header">Recent Projects</h2>
+      {% for project in site.projects limit:2 %}
+      <h1 class="home-project-title"><a href="{{ project.url }}">{{ project.title }}</a></h1>
+     <!-- <p class="home-project-subtitle">{{ project.excerpt }}</p> -->
     {% endfor %}
     </section>
 
-    <section>
-
+    <section class="home-writing">
+      <h2 class="home-writing-header">Recent Writing</h2>
     {% for writing in site.writing limit:2 %}
-     <h1><a href="{{ writing.url }}">{{ writing.title }}</a></h1>
-     {{ writing.excerpt }}
+     <h1 class="home-writing-title"><a href="{{ writing.url }}">{{ writing.title }}</a></h1>
+     <!-- <p class="home-writing-subtitle">{{ writing.subtitle }}</p> -->
     {% endfor %}
-
     </section>
-  </div>
 
-  <!-- <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p> -->
+  </div>
 
 </div>

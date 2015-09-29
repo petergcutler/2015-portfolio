@@ -1,6 +1,7 @@
 ---
 layout: writing-individual
-title:  "This is the second post by Peter"
+title:  This is the second post by Peter
+subtitle: Also a blast
 date:   2015-04-29 13:27:45
 categories: blog post
 excerpt: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde fugiat, ab, veniam iste dolores recusandae voluptatem id dolorem beatae dolor culpa iure odit pariatur neque magnam aliquid eius. Neque, tempora!
