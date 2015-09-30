@@ -5,7 +5,7 @@ layout: default
 <ul class="projects">
    {% for project in site.projects %}
    	<li class="projects-list">
-     	<h2><a href="{{ project.url }}">{{ project.title }}</a></h2>
+     	<h2 class="project-title"><a href="{{ project.url }}">{{ project.title }}</a></h2>
      	{{ project.excerpt }}
      	<img class="project-image" src="/images/{{ project.thumbnail }}">
     </li>
