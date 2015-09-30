@@ -121,7 +121,7 @@ a {
 .header-border {
   border: 2px solid #ecf0f1;
   padding: 0;
-  margin: 0; }
+  margin: 0 auto; }
 
 /* -----------------------------------*/
 /* ---            HOME             ---*/
@@ -239,6 +239,9 @@ img {
     padding: 1em 1em 0 1em;
     margin: 0; }
 
+  .home-hero {
+    height: 23em; }
+
   .home-options {
     display: flex;
     flex-flow: column; }
@@ -256,6 +259,9 @@ img {
 @media (max-width: 40em) {
   .nav-block {
     flex-direction: column; }
+
+  .home-hero {
+    height: 0; }
 
   .page-heading {
     font-size: 1.4em; } }
