@@ -6,6 +6,8 @@ date: 2015-04-29 13:27:45
 categories: blog post
 excerpt: Project Jacquard makes it possible to weave touch and gesture interactivity into any textile using standard, industrial looms.
 ---
+<p>
 This is possible thanks to new conductive yarns, created in collaboration with our industrial partners.
 Jacquard yarn structures combine thin, metallic alloys with natural and synthetic yarns like cotton, polyester, or silk, making the yarn strong enough to be woven on any industrial loom.
 Jacquard yarns are indistinguishable from the traditional yarns that are used to produce fabrics today.
+</p>

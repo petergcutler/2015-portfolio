@@ -163,7 +163,9 @@ a {
   color: #999;
 }
 
-.project-title {
+.project-title a {
+  color: #fff;
+  font-weight: 500;
   position: absolute;
   font-size: .8em;
   width: 16em;
@@ -172,11 +174,6 @@ a {
   background-color: #3eb286;
   box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
   transform: translate(-1em, 2em);
-}
-
-.project-title a {
-  color: #fff;
-  font-weight: 500;
 }
 
 .projects-list {
@@ -201,6 +198,12 @@ img {
   display: block;
   box-shadow: 0 1px 3px rgba(0,0,0,0.12),
               0 1px 2px rgba(0,0,0,0.24);
+  transition: box-shadow 400ms ease;
+}
+
+.projects img:hover {
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16),
+              0 3px 6px rgba(0,0,0,0.23);
 }
 
 .post-title {
@@ -209,7 +212,6 @@ img {
   color: $brand-color;
   margin: 1em 0;
 }
-
 
 .writing h1 {
   margin-top: 1em;
@@ -223,6 +225,14 @@ img {
   margin-top: .6em;
   margin-bottom: 2em;
 }
+
+
+.typography {
+  max-width: 40em;
+  line-height: 1.6em;
+
+}
+
 
 
 /* -----------------------------------*/

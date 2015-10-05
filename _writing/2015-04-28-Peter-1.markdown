@@ -6,4 +6,10 @@ date: 2015-04-28 13:27:45
 categories: blog post
 excerpt: Project Soli is using radar to enable new types of touchless interactions
 ---
-Project Soli is using radar to enable new types of touchless interactions -- one where the human hand becomes a natural, intuitive interface for our devices. The Soli sensor can track sub-millimeter motions at high speed and accuracy. It fits onto a chip, can be produced at scale, and can be used inside even small wearable devices. We want to break the tension between the ever-shrinking screen sizes used in wearables, as well as other digital devices, and our ability to interact with them.
+  <p>
+    Project Soli is using radar to enable new types of touchless interactions -- one where the human hand becomes a natural, intuitive interface for our devices. The Soli sensor can track sub-millimeter motions at high speed and accuracy. It fits onto a chip, can be produced at scale, and can be used inside even small wearable devices. We want to break the tension between the ever-shrinking screen sizes used in wearables, as well as other digital devices, and our ability to interact with them.
+  </p>
+  <hr>
+  <p>
+    The Project Soli team is planning to release a dev kit that will allow developers to create new interactions and applications.
+  </p>

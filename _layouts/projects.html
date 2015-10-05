@@ -2,12 +2,20 @@
 layout: default
 ---
 
+<!-- <ul class="projects">
+   {% for project in site.projects %}
+   	<li class="projects-list">
+     	<h2 class="project-title"><a href="{{ project.url }}">{{ project.title }}</a></h2>
+     	<img class="project-image" src="/images/{{ project.thumbnail }}">
+    </li>
+    {% endfor %}
+</ul> -->
+
 <ul class="projects">
    {% for project in site.projects %}
    	<li class="projects-list">
      	<h2 class="project-title"><a href="{{ project.url }}">{{ project.title }}</a></h2>
-     	{{ project.excerpt }}
-     	<img class="project-image" src="/images/{{ project.thumbnail }}">
+      <a href="{{ project.url }}"><img class="project-image" src="/images/{{ project.thumbnail }}"></a>
     </li>
     {% endfor %}
 </ul>
