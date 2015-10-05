@@ -1,7 +1,7 @@
 ---
 title: Tropes Bookmarking App
-image: project_image_template.png
 layout: project-individual
-video: https://tropes.herokuapp.com
+proj-url: https://tropes.herokuapp.com
+github: https://github.com/petergcutler/guacamole
 thumbnail: tropes.png
 ---

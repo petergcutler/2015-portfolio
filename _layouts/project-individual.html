@@ -9,13 +9,28 @@ layout: default
     <p class="post-meta">{{ page.date | date: "%b %-d, %Y" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</p>
   </header>
 
+  <section class="basic-info">
+
+    <h1 class="project-name"><{{ page.title}}></h1>
+
+    <ul class="project-links">
+
+      <li class="site-item">
+        <p class="heading">Project URL</p>
+        <h1 class="title"><a href="{{ page.proj-url }}" class="site-url">{{ page.proj-url }}</a></h1>
+      </li>
+
+      <li class="github-item">
+        <p class="heading">Github URL</p>
+        <h1 class="title"><a href="{{ page.github }}" class="github-url">{{ page.github }}</a></h1>
+      </li>
+
+    </ul>
+
+  </section>
+
   <article class="post-content">
     {{ content }}
   </article>
-
-  <div>
-  	<iframe src="{{ page.video }}" width="854" height="480" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-    <!-- <p><a href="{{ page.video }}">{{ page.title }}</a> from <a href="https://vimeo.com/petergcutler">Peter Cutler</a> on <a href="https://vimeo.com">Vimeo</a>.</p> -->
-  </div>
 
 </div>

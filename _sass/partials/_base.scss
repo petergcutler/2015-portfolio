@@ -101,13 +101,14 @@ a {
 }
 
 
-.home-options {
+.home {
   margin-top: 1em;
   display: flex;
   > * {
     flex: 0 0 50%;
   }
 }
+
 
 .page-heading {
   font-size: 2em;
@@ -118,19 +119,15 @@ a {
   line-height: 1.4em;
 }
 
-.home-projects-header {
+
+.heading {
   color: #999;
   font-weight: 500;
   margin-bottom: 1em;
 }
 
-.home-writing-header {
-  color: #999;
-  font-weight: 500;
-  margin-bottom: 1em;
-}
 
-.home-project-title {
+.title {
   text-decoration: none;
   font-size: 1.6em;
   margin: 0 0 1em 0;
@@ -139,16 +136,6 @@ a {
   white-space: normal;
 }
 
-.home-writing-title {
-  text-decoration: none;
-  font-size: 1.6em;
-  margin: 0 0 1em 0;
-}
-
-// .home-writing-subtitle {
-//   text-decoration: none;
-//   color: #999;
-// }
 
 /* -----------------------------------*/
 /* ---          SUB PAGES          ---*/
@@ -228,7 +215,8 @@ img {
 
 
 .typography {
-  max-width: 40em;
+  font-size: 1.4em;
+  max-width: 30em;
   line-height: 1.6em;
 
 }
@@ -265,7 +253,7 @@ img {
     height: 23em;
   }
 
-  .home-options {
+  .home {
     display: flex;
     flex-flow: column;
     > * {
@@ -273,7 +261,7 @@ img {
     }
   }
 
-  .home-options section{
+  .home section{
     margin-bottom: 2em;
   }
 

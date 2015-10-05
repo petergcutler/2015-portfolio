@@ -1,7 +1,7 @@
 ---
 title: School Wellness App
-image: project_image_template.png
 layout: project-individual
-video: https://schoolwellness.herokuapp.com
+proj-url: https://schoolwellness.herokuapp.com
+github: https://github.com/mattficke/school-wellness
 thumbnail: school_wellness.png
 ---
