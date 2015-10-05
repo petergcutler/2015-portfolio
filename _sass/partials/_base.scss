@@ -171,7 +171,7 @@ a {
   line-height: 1.4em;
   background-color: #3eb286;
   box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
-  transform: translate(1em, 1em);
+  transform: translate(-1em, 2em);
 }
 
 .project-title a {
@@ -281,8 +281,22 @@ img {
     flex-direction: column;
   }
 
+  .nav-block a {
+    padding: 0;
+    margin: 0;
+  }
+
+  .nav-block li {
+    padding: .4em 0;
+    margin: 0;
+  }
+
   .home-hero{
     height: 0;
+  }
+
+  .page-content {
+    padding: 1em;
   }
 
   .page-heading {
