@@ -179,17 +179,17 @@ a {
   line-height: 1.4em;
   background-color: #3eb286;
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
-  transform: translate(-1em, 2em); }
+  transform: translate(-1em, 1em); }
 
 .projects-list {
   flex-direction: row;
   flex: 0 0 50%; }
 
 .projects-list:nth-child(2n + 0) {
-  padding: 1em 0 0 1em; }
+  padding: 2em 0 0 1em; }
 
 .projects-list:nth-child(2n + 1) {
-  padding: 1em 1em 0 0; }
+  padding: 2em 1em 0 0; }
 
 img {
   max-width: 100%;
