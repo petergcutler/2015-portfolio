@@ -286,6 +286,12 @@ img {
 
 @media (max-width: 40em) {
 
+  .site-nav {
+    display: flex;
+    padding: 2em 1em;
+    max-width: 75em;
+  }
+
   .nav-block {
     flex-direction: column;
   }
