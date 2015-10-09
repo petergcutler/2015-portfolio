@@ -22,7 +22,8 @@ $base-line-height: 1.5;
 // -- brand colors
 $brand-green: #3eb286;
 $brand-red: #ff4f29;
-$brand-lightgray: #999;
+$brand-gray: #999;
+$brand-lightgray: #ecf0f1;
 
 // -- grayscales
 $text-color: #333;
@@ -44,12 +45,28 @@ body {
 
 a {
     color: $brand-green;
-    border-bottom: 0.125em solid #3eb286;
+    text-decoration: none;
 
     &:hover {
-        color: $brand-red;
+        text-decoration: underline;
     }
 }
+
+
+// add later
+
+// a {
+//     text-decoration: none;
+//     color: $brand-green;
+//     border-bottom: 0.125em solid $brand-green;
+//
+//     &:hover {
+//         text-decoration: none;
+//         color: $brand-red;
+//         border-bottom: 0.125em solid $brand-red;
+//     }
+// }
+
 
 /* -----------------------------------*/
 /* ---           HEADER            ---*/
@@ -89,7 +106,7 @@ a {
 .nav-block a {
   padding: .8em;
   margin: 0 1.2em;
-  color: $brand-lightgray;
+  color: $brand-gray;
   text-decoration: none;
   transition: color 400ms ease;
 }
@@ -134,7 +151,7 @@ a {
 .page-heading {
   font-size: 2em;
   font-weight: 300;
-  color: $brand-lightgray;
+  color: $brand-gray;
   margin: 1em 0;
   margin-bottom: 2em;
   line-height: 1.4em;
@@ -142,7 +159,7 @@ a {
 
 
 .heading {
-  color: $brand-lightgray;
+  color: $brand-gray;
   font-weight: 500;
   margin-bottom: 1em;
 }
@@ -168,7 +185,7 @@ a {
   text-decoration: none;
   font-family: 'roboto';
   font-size: 1.5em;
-  color: $brand-lightgray;
+  color: $brand-gray;
 }
 
 .project-title a {

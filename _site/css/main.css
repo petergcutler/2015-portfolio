@@ -72,7 +72,6 @@ a {
   color: #3eb286;
   text-decoration: none; }
   a:hover {
-    color: #3eb286;
     text-decoration: underline; }
 
 /* -----------------------------------*/
@@ -170,7 +169,7 @@ a {
   color: #999; }
 
 .project-title a {
-  color: #fff;
+  color: white;
   font-weight: 500;
   position: absolute;
   font-size: .8em;
