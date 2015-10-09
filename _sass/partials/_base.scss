@@ -2,10 +2,34 @@
 /* ---           BASICS            ---*/
 /* -----------------------------------*/
 
+// type
+
+// -- font weight
+$light: 300;
+$regular: 500;
+$bold: 700;
+
+// -- base font
 $base-font-family: 'Roboto', sans-serif;
 $base-font-size: 1em;
 $base-font-weight: 300;
-$brand-color: #3eb286;
+$base-line-height: 1.5;
+
+
+
+// color
+
+// -- brand colors
+$brand-green: #3eb286;
+$brand-red: #ff4f29
+$brand-lightgray: #999;
+
+// -- grayscales
+$text-color: #333;
+$quiet-color: #ccc;
+$loud-color: #000;
+$heading-color: #111;
+
 
 body {
   font-family: $base-font-family;
@@ -16,17 +40,14 @@ body {
 	-moz-osx-font-smoothing: grayscale;
 }
 
-a {
-    color: $brand-color;
-    text-decoration: none;
 
-    &:visited {
-        // color: darken($brand-color, 15%);
-    }
+
+a {
+    color: $brand-green;
+    border-bottom: 0.125em solid #3eb286;
 
     &:hover {
-        color: $brand-color;
-        text-decoration: underline;
+        color: $brand-red;
     }
 }
 
@@ -46,12 +67,12 @@ a {
   letter-spacing: .1em;
   text-decoration: none;
   white-space: nowrap;
-  color: #3eb286;
+  color: $brand-green;
   transition: color 400ms ease;
 }
 
 .peter-name:hover{
-  color: #3eb286;
+  color: $brand-green;
   text-decoration: none;
 }
 
@@ -68,7 +89,7 @@ a {
 .nav-block a {
   padding: .8em;
   margin: 0 1.2em;
-  color: #999;
+  color: $brand-lightgray;
   text-decoration: none;
   transition: color 400ms ease;
 }
@@ -79,11 +100,11 @@ a {
 }
 
 .nav-block a:hover {
-  color: #3eb286;
+  color: $brand-green;
 }
 
 .header-border {
-  border: 2px solid #ecf0f1;
+  border: 2px solid $brand-lightgray;
   padding: 0;
   margin: 0 auto;
 }
@@ -113,7 +134,7 @@ a {
 .page-heading {
   font-size: 2em;
   font-weight: 300;
-  color: #999;
+  color: $brand-lightgray;
   margin: 1em 0;
   margin-bottom: 2em;
   line-height: 1.4em;
@@ -121,7 +142,7 @@ a {
 
 
 .heading {
-  color: #999;
+  color: $brand-lightgray;
   font-weight: 500;
   margin-bottom: 1em;
 }
@@ -147,18 +168,18 @@ a {
   text-decoration: none;
   font-family: 'roboto';
   font-size: 1.5em;
-  color: #999;
+  color: $brand-lightgray;
 }
 
 .project-title a {
-  color: #fff;
+  color: white;
   font-weight: 500;
   position: absolute;
   font-size: .8em;
   width: 16em;
   padding: .4em;
   line-height: 1.4em;
-  background-color: #3eb286;
+  background-color: $brand-green;
   box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
   transform: translate(-1em, 1em);
 }
@@ -196,7 +217,7 @@ img {
 .post-title {
   font-weight: 500;
   font-size: 2em;
-  color: $brand-color;
+  color: $brand-green;
   margin: 1em 0;
 }
 
@@ -221,7 +242,7 @@ img {
 }
 
 .icon {
-  color: #3eb286;
+  color: $brand-green;
   cursor: pointer;
   display: none;
   font-size: 1.5em;
